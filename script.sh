@@ -32,7 +32,7 @@ echo "===================================="
 echo "=============================================="
 echo "         Cloning Manifest..........."
 echo "=============================================="
-if ! repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0 --git-lfs; then
+if ! repo init -u https://github.com/ProjectMatrixx/android.git -b 15 --git-lfs; then
   echo "Repo initialization failed."
 fi
 echo "=============================================="
@@ -62,11 +62,11 @@ rm -rf hardware/mediatek
 
 rm -rf device/mediatek/sepolicy_vndr
 
-git clone https://github.com/AbuRider/android_device_xiaomi_earth -b lineage-21 device/xiaomi/earth || { echo "Failed to clone device tree"; }
+git clone https://github.com/AbuRider/android_device_xiaomi_earth -b lineage-22.2 device/xiaomi/earth || { echo "Failed to clone device tree"; }
 
-git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth -b lineage-21 vendor/xiaomi/earth || { echo "Failed to clone vendor tree"; }
+git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth -b lineage-22.2 vendor/xiaomi/earth || { echo "Failed to clone vendor tree"; }
 
-git clone https://github.com/AbuRider/android_kernel_xiaomi_earth -b lineage-21 kernel/xiaomi/earth || { echo "Failed to clone kernel tree"; }
+git clone https://github.com/AbuRider/android_kernel_xiaomi_earth -b lineage-22.2 kernel/xiaomi/earth || { echo "Failed to clone kernel tree"; }
 
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiaomi || { echo "Failed to clone xiaomi stuffs"; }
 
