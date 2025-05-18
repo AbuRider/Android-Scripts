@@ -29,6 +29,8 @@ echo "  Removing Unnecessary Files Done"
 echo "===================================="
 
 # Initialize repo
+rm -rf .repo/local_manifests/
+git clone 
 echo "=============================================="
 echo "         Cloning Manifest..........."
 echo "=============================================="
