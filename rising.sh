@@ -30,7 +30,7 @@ echo "===================================="
 
 # Initialize repo
 rm -rf .repo/local_manifests/
-git clone 
+git clone https://github.com/AbuRider/Manifest-Lokal.git -b Matrixx-15 .repo/local_manifests/
 echo "=============================================="
 echo "         Cloning Manifest..........."
 echo "=============================================="
@@ -90,9 +90,6 @@ echo "======= Export Done ======"
 echo "====== Starting Envsetup ======="
 source build/envsetup.sh || { echo "Envsetup failed"; exit 1; }
 echo "====== Envsetup Done ======="
-
-#keys
-gk -s
 
 # Build ROM
 echo "===================================="
