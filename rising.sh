@@ -32,7 +32,7 @@ echo "===================================="
 echo "=============================================="
 echo "         Cloning Manifest..........."
 echo "=============================================="
-if ! repo init -u https://github.com/ProjectMatrixx/android.git -b 15.0 --git-lfs; then
+if ! repo init -u https://github.com/RisingOS-Revived/android -b qpr2 --git-lfs; then
   echo "Repo initialization failed."
 fi
 echo "=============================================="
@@ -89,6 +89,8 @@ echo "====== Starting Envsetup ======="
 source build/envsetup.sh || { echo "Envsetup failed"; exit 1; }
 echo "====== Envsetup Done ======="
 
+#keys
+gk -s
 
 # Build ROM
 echo "===================================="
