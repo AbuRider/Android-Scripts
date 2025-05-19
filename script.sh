@@ -85,7 +85,8 @@ export <?xml version="1.0" encoding="utf-8"?>
     <!-- Android version screen, build maintainer -->
     <string name="matrixx_maintainer">PriaTampan</string>
 </resources>
-cd ..
+ctrl + x
+cd .. && cd .. && cd .. && cd .. && cd .. && cd ..
 
 /opt/crave/resync.sh
 
