@@ -76,6 +76,18 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git
 
 /opt/crave/resync.sh
 
+# Add in your overlay (overlay/packages/apps/Settings/res/values/strings.xml)
+cd overlay/packages/apps/Settings/res/values && nano strings.xml
+export <?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2025 Project Matrixx
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Android version screen, build maintainer -->
+    <string name="matrixx_maintainer">PriaTampan</string>
+</resources>
+
 # Export Environment Variables
 echo "======= Exporting........ ======"
 export BUILD_USERNAME=kingtaksaka
