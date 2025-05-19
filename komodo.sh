@@ -32,8 +32,7 @@ echo "===================================="
 echo "=============================================="
 echo "         Cloning Manifest..........."
 echo "=============================================="
-if ! repo init -u https://github.com/Komodo-OS/manifest -b 15 --git-lfs
-; then
+if ! repo init -u https://github.com/Komodo-OS/manifest -b 15 --git-lfs; then
   echo "Repo initialization failed."
 fi
 echo "=============================================="
@@ -97,3 +96,4 @@ echo "  BRINGING TO HORIZON , STARTING BUILD.."
 echo "===================================="
 . build/envsetup.sh
 lunch komodo_earth-userdebug
+
