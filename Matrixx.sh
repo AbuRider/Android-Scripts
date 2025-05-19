@@ -62,7 +62,7 @@ rm -rf hardware/mediatek
 
 rm -rf device/mediatek/sepolicy_vndr
 
-git clone https://github.com/mt6768-dev/android_device_xiaomi_earth -b lineage-22.2 device/xiaomi/earth || { echo "Failed to clone device tree"; }
+git clone https://github.com/AbuRider/android_device_xiaomi_earth/ -b lineage-22.2 device/xiaomi/earth || { echo "Failed to clone device tree"; }
 
 git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth -b lineage-22.2 vendor/xiaomi/earth || { echo "Failed to clone vendor tree"; }
 
@@ -73,20 +73,6 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiao
 git clone https://github.com/LineageOS/android_hardware_mediatek.git hardware/mediatek || { echo "Failed to clone mediatek hardwares"; }
 
 git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git device/mediatek/sepolicy_vndr || { echo "Failed to sepolicy_vndr"; }
-
-# Add in your overlay (overlay/packages/apps/Settings/res/values/strings.xml)
-cd overlay/packages/apps/Settings/res/values && nano strings.xml
-export <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2025 Project Matrixx
-     SPDX-License-Identifier: Apache-2.0
--->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Android version screen, build maintainer -->
-    <string name="matrixx_maintainer">PriaTampan</string>
-</resources>
-ctrl + x
-cd .. && cd .. && cd .. && cd .. && cd .. && cd ..
 
 /opt/crave/resync.sh
 
