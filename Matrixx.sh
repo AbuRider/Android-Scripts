@@ -78,7 +78,7 @@ git clone https://github.com/ProjectMatrixx/android_vendor_lineage-priv_keys-tem
 
 cd vendor/lineage-priv/keys && ./generate.sh
 
-cd ..
+cd .. && cd .. && cd ..
 
 /opt/crave/resync.sh
 
