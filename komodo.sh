@@ -89,6 +89,8 @@ echo "====== Starting Envsetup ======="
 source build/envsetup.sh || { echo "Envsetup failed"; exit 1; }
 echo "====== Envsetup Done ======="
 
+#keys
+gk -s
 
 # Build ROM
 echo "===================================="
