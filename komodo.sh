@@ -39,7 +39,7 @@ echo "=============================================="
 echo "       Manifest Cloned successfully"
 echo "=============================================="
 # Sync
-if ! /opt/crave/resync.sh || ! repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags; then
+if ! /opt/crave/resync.sh || ! repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all); then
   echo "Repo sync failed."
 fi
 echo "============="
@@ -78,6 +78,7 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git
 
 # Export Environment Variables
 echo "======= Exporting........ ======"
+export KOMODO_MAINTAINER=Pria_Tampan
 export BUILD_USERNAME=kingtaksaka
 export BUILD_HOSTNAME=crave
 export TZ=Asia/Jakarta
@@ -89,14 +90,10 @@ echo "====== Starting Envsetup ======="
 source build/envsetup.sh || { echo "Envsetup failed"; exit 1; }
 echo "====== Envsetup Done ======="
 
-#keys
-gk -s
-
 # Build ROM
 echo "===================================="
 echo "  BRINGING TO HORIZON , STARTING BUILD.."
 echo "===================================="
 . build/envsetup.sh
 lunch komodo_earth-userdebug
-mka komodo -jX
-
+mka komodo
