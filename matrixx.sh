@@ -64,7 +64,7 @@ rm -rf device/mediatek/sepolicy_vndr
 
 git clone https://github.com/AbuRider/android_device_xiaomi_earth.git -b matrixx device/xiaomi/earth || { echo "Failed to clone device tree"; }
 
-git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.giy -b lineage-22.2 vendor/xiaomi/earth || { echo "Failed to clone vendor tree"; }
+git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git -b lineage-22.2 vendor/xiaomi/earth || { echo "Failed to clone vendor tree"; }
 
 git clone https://github.com/AbuRider/android_kernel_xiaomi_earth.git -b lineage-22.2 kernel/xiaomi/earth || { echo "Failed to clone kernel tree"; }
 
