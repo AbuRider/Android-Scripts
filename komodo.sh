@@ -62,11 +62,11 @@ rm -rf hardware/mediatek
 
 rm -rf device/mediatek/sepolicy_vndr
 
-git clone https://github.com/mt6768-dev/android_device_xiaomi_earth -b lineage-22.1 device/xiaomi/earth || { echo "Failed to clone device tree"; }
+git clone https://github.com/mt6768-dev/android_device_xiaomi_earth.git -b lineage-22.1 device/xiaomi/earth || { echo "Failed to clone device tree"; }
 
-git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth -b lineage-22.1 vendor/xiaomi/earth || { echo "Failed to clone vendor tree"; }
+git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git -b lineage-22.1 vendor/xiaomi/earth || { echo "Failed to clone vendor tree"; }
 
-git clone https://github.com/mt6768-dev/android_kernel_xiaomi_earth -b lineage-22.1 kernel/xiaomi/earth || { echo "Failed to clone kernel tree"; }
+git clone https://github.com/mt6768-dev/android_kernel_xiaomi_earth.git -b lineage-22.1 kernel/xiaomi/earth || { echo "Failed to clone kernel tree"; }
 
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiaomi || { echo "Failed to clone xiaomi stuffs"; }
 
