@@ -76,11 +76,9 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git
 
 git clone https://github.com/ProjectMatrixx/android_vendor_lineage-priv_keys-template.git -b master vendor/lineage-priv/keys || { echo "Failed to clone priv keys"; }
 
+./vendor/lineage-priv/keys/generate.sh
+
 /opt/crave/resync.sh
-
-cd vendor/lineage-priv/keys && ./generate.sh
-
-cd .. && cd .. && cd ..
 
 # Export Environment Variables
 echo "======= Exporting........ ======"
