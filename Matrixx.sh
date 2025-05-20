@@ -74,7 +74,9 @@ git clone https://github.com/LineageOS/android_hardware_mediatek.git hardware/me
 
 git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git device/mediatek/sepolicy_vndr || { echo "Failed to sepolicy_vndr"; }
 
-git clone https://github.com/ProjectMatrixx/android_vendor_lineage-priv_keys-template.git -b master vendor/lineage-priv/keys && ./vendor/lineage-priv/keys/generate.sh
+git clone https://github.com/ProjectMatrixx/android_vendor_lineage-priv_keys-template.git -b master vendor/lineage-priv/keys
+
+./vendor/lineage-priv/keys/generate.sh
 
 /opt/crave/resync.sh
 
