@@ -94,5 +94,5 @@ echo "===================================="
 echo "  BRINGING TO HORIZON , STARTING BUILD.."
 echo "===================================="
 . build/envsetup.sh
-lunch komodo_earth-userdebug
+lunch komodo_earth-ap4a-userdebug
 mka komodo
