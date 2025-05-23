@@ -68,7 +68,7 @@ git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git -b l
 
 git clone https://github.com/mt6768-dev/android_kernel_xiaomi_earth.git -b lineage-22.1 kernel/xiaomi/earth || { echo "Failed to clone kernel tree"; }
 
-git clone https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiaomi -b lineage-22.1|| { echo "Failed to clone xiaomi stuffs"; }
+git clone https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiaomi || { echo "Failed to clone xiaomi stuffs"; }
 
 git clone https://github.com/LineageOS/android_hardware_mediatek.git -b lineage-22.1 hardware/mediatek || { echo "Failed to clone mediatek hardwares"; }
 
