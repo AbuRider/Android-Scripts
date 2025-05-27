@@ -95,4 +95,4 @@ echo "===================================="
 echo "  BRINGING TO HORIZON , STARTING BUILD.."
 echo "===================================="
 . build/envsetup.sh
-lunch lineage_earth-ap2a-userdebug
+lunch lineage_earth-ap2a-userdebug && mka everest
