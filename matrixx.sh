@@ -74,6 +74,8 @@ git clone https://github.com/LineageOS/android_hardware_mediatek.git hardware/me
 
 git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git device/mediatek/sepolicy_vndr || { echo "Failed to sepolicy_vndr"; }
 
+git clone https://github.com/AbuRider/vendor_extra.git vendor/lineage-priv/keys || { echo "Failed to clone priv-keys"; }
+
 /opt/crave/resync.sh
 
 # Export Environment Variables
