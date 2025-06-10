@@ -66,7 +66,7 @@ git clone https://github.com/AbuRider/android_device_xiaomi_earth.git -b matrixx
 
 git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git -b lineage-22.2 vendor/xiaomi/earth || { echo "Failed to clone vendor tree"; }
 
-git clone https://github.com/AbuRider/android_kernel_xiaomi_earth.git -b lineage-22.2 kernel/xiaomi/earth || { echo "Failed to clone kernel tree"; }
+git clone https://github.com/LineageOS/android_kernel_xiaomi_earth.git -b lineage-22.2 kernel/xiaomi/earth || { echo "Failed to clone kernel tree"; }
 
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiaomi || { echo "Failed to clone xiaomi stuffs"; }
 
@@ -91,10 +91,9 @@ echo "====== Starting Envsetup ======="
 source build/envsetup.sh || { echo "Envsetup failed"; exit 1; }
 echo "====== Envsetup Done ======="
 
-
 # Build ROM
 echo "===================================="
-echo "  BRINGING TO HORIZON , STARTING BUILD.."
+echo "  MATRIKSS BESTT, STARTING BUILD.."
 echo "===================================="
 . build/envsetup.sh
 brunch earth 
