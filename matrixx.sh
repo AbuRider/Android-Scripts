@@ -80,7 +80,7 @@ git clone https://github.com/AbuRider/vendor_extra.git vendor/lineage-priv/keys 
 
 # Export Environment Variables
 echo "======= Exporting........ ======"
-export BUILD_USERNAME=kingtaksaka
+export BUILD_USERNAME=dnr
 export BUILD_HOSTNAME=crave
 export TZ=Asia/Jakarta
 export ALLOW_MISSING_DEPENDENCIES=true
