@@ -32,7 +32,7 @@ echo "===================================="
 echo "=============================================="
 echo "         Cloning Manifest..........."
 echo "=============================================="
-if ! repo init -u https://github.com/ProjectMatrixx/android.git -b 15.0 --git-lfs; then
+if ! repo init -u https://github.com/AbuRider/android.git -b 15.0 --git-lfs; then
   echo "Repo initialization failed."
 fi
 echo "=============================================="
