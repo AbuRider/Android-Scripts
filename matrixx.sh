@@ -10,8 +10,6 @@ dirs_to_remove=(
   "vendor/xiaomi"
   "kernel/xiaomi"
   "device/xiaomi"
-  "device/xiaomi/sm6150-common"
-  "vendor/xiaomi/sm6150-common"
   "hardware/xiaomi"
   "out/target/product/*/*zip"
   "out/target/product/*/*txt"
@@ -32,7 +30,7 @@ echo "===================================="
 echo "=============================================="
 echo "         Cloning Manifest..........."
 echo "=============================================="
-if ! repo init -u https://github.com/AbuRider/android.git -b 15.0 --git-lfs; then
+if ! repo init -u https://github.com/ProjectMatrixx/android.git -b 15.0 --git-lfs; then
   echo "Repo initialization failed."
 fi
 echo "=============================================="
@@ -80,7 +78,7 @@ git clone https://github.com/AbuRider/vendor_extra.git vendor/lineage-priv/keys 
 
 # Export Environment Variables
 echo "======= Exporting........ ======"
-export BUILD_USERNAME=dnr
+export BUILD_USERNAME=rmdw
 export BUILD_HOSTNAME=crave
 export TZ=Asia/Jakarta
 export ALLOW_MISSING_DEPENDENCIES=true
