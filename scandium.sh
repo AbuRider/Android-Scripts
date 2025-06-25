@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # repo init
-repo init --depth=1 -u https://github.com/ScandiumOS-14/manifest -b 14 --git-lfs
+repo init --depth=1 -u https://github.com/ScandiumOS-14/manifest.git -b 14 --git-lfs
 echo "repo init succses...."
 
 # sync
