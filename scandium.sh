@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # repo init
 repo init --depth=1 -u https://github.com/ScandiumOS-14/manifest -b 14 --git-lfs
