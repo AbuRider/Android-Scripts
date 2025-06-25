@@ -19,17 +19,17 @@ rm -rf hardware/xiaomi
 rm -rf hardware/mediatek
 rm -rf device/mediatek/sepolicy_vndr
 
-git clone https://github.com/AbuRider/android_device_xiaomi_earth.git -b scandium device/xiaomi/earth || { echo "Failed to clone device tree"; }
+git clone https://github.com/AbuRider/android_device_xiaomi_earth.git -b scandium device/xiaomi/earth
 
-git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git -b lineage-22.2 vendor/xiaomi/earth || { echo "Failed to clone vendor tree"; }
+git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git -b lineage-21 vendor/xiaomi/earth
 
-git clone https://github.com/LineageOS/android_kernel_xiaomi_earth.git -b lineage-22.2 kernel/xiaomi/earth || { echo "Failed to clone kernel tree"; }
+git clone https://github.com/LineageOS/android_kernel_xiaomi_earth.git -b lineage-21 kernel/xiaomi/earth
 
-git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-22.2 hardware/xiaomi || { echo "Failed to clone xiaomi stuffs"; }
+git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-21 hardware/xiaomi
 
-git clone https://github.com/LineageOS/android_hardware_mediatek.git -b lineage-22.2 hardware/mediatek || { echo "Failed to clone mediatek hardwares"; }
+git clone https://github.com/LineageOS/android_hardware_mediatek.git -b lineage-21 hardware/mediatek
 
-git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git -b lineage-22.2 device/mediatek/sepolicy_vndr || { echo "Failed to sepolicy_vndr"; }
+git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git -b lineage-21 device/mediatek/sepolicy_vndr
 
 /opt/crave/resync.sh
 
