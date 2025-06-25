@@ -22,6 +22,10 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git
 
 /opt/crave/resync.sh
 
+# kalender kontol
+rm -rf packages/apps/Calendar
+git clone https://github.com/LineageOS/android_packages_apps_Etar.git -b lineage-21 packages/apps/Calendar
+
 # export
 export BUILD_USERNAME=rmdw
 export BUILD_HOSTNAME=crave
