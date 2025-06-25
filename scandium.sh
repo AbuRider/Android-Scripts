@@ -13,15 +13,10 @@ echo "cloning pohon perangkat...."
 echo "==========================="
 
 rm -rf device/xiaomi
-
 rm -rf vendor/xiaomi
-
 rm -rf kernel/xiaomi
-
 rm -rf hardware/xiaomi
-
 rm -rf hardware/mediatek
-
 rm -rf device/mediatek/sepolicy_vndr
 
 git clone https://github.com/AbuRider/android_device_xiaomi_earth.git -b scandium device/xiaomi/earth || { echo "Failed to clone device tree"; }
