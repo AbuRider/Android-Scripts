@@ -18,8 +18,6 @@ git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git -b l
 
 git clone https://github.com/LineageOS/android_kernel_xiaomi_earth.git -b lineage-21 kernel/xiaomi/earth
 
-git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-21 hardware/xiaomi
-
 git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git -b lineage-21 device/mediatek/sepolicy_vndr
 
 /opt/crave/resync.sh
