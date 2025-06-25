@@ -5,7 +5,7 @@ repo init --depth=1 -u https://github.com/ScandiumOS-14/manifest -b 14 --git-lfs
 echo "repo init succses...."
 
 # sync
-if /opt/crave/resync.sh || if 
+/opt/crave/resync.sh || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 echo "sync succsessfull...."
 
 # cloning trees bg
