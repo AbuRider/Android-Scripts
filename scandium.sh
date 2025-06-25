@@ -12,13 +12,6 @@ echo "sync succsessfull...."
 echo "cloning pohon perangkat...."
 echo "==========================="
 
-rm -rf device/xiaomi
-rm -rf vendor/xiaomi
-rm -rf kernel/xiaomi
-rm -rf hardware/xiaomi
-rm -rf hardware/mediatek
-rm -rf device/mediatek/sepolicy_vndr
-
 git clone https://github.com/AbuRider/android_device_xiaomi_earth.git -b scandium device/xiaomi/earth
 
 git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git -b lineage-21 vendor/xiaomi/earth
@@ -26,8 +19,6 @@ git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git -b l
 git clone https://github.com/LineageOS/android_kernel_xiaomi_earth.git -b lineage-21 kernel/xiaomi/earth
 
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-21 hardware/xiaomi
-
-git clone https://github.com/LineageOS/android_hardware_mediatek.git -b lineage-21 hardware/mediatek
 
 git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git -b lineage-21 device/mediatek/sepolicy_vndr
 
