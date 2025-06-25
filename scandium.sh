@@ -29,6 +29,7 @@ export TZ=Asia/Jakarta
 export ALLOW_MISSING_DEPENDENCIES=true
 echo "export done...."
 
+# start build !
 . build/envsetup.sh
 lunch scandium_earth-ap2a-userdebug
 make bacon
