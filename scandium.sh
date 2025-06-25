@@ -36,4 +36,6 @@ echo "export done...."
 # start build !
 . build/envsetup.sh
 lunch scandium_earth-ap2a-userdebug
+m system-api-stubs-docs-non-updatable-update-current-api
+m DISABLE_STUB_VALIDATION=true system-api-stubs-docs-non-updatable-update-current-api
 make bacon
