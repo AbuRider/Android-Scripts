@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf device/xiaomi/earth
+
 # repo init
 repo init --depth=1 -u https://github.com/ScandiumOS-14/manifest.git -b 14 --git-lfs
 echo "repo init succses...."
@@ -9,9 +11,6 @@ echo "repo init succses...."
 echo "sync succsessfull...."
 
 # cloning trees bg
-echo "cloning pohon perangkat...."
-echo "==========================="
-
 git clone https://github.com/AbuRider/android_device_xiaomi_earth.git -b scandium device/xiaomi/earth
 
 git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git -b lineage-21 vendor/xiaomi/earth
@@ -24,7 +23,11 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git
 
 # kalender kontol
 rm -rf packages/apps/Calendar
+rm -rf packages/apps/Settings
+
 git clone --depth=1 https://github.com/LineageOS/android_packages_apps_Etar.git -b lineage-21.0 packages/apps/Calendar
+
+git clone --depth=1 https://github.com/ScandiumOS-14/packages_apps_Settings.git -b 14 packages/apps/Settings
 
 # export
 export BUILD_USERNAME=rmdw
