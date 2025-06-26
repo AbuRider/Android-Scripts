@@ -11,7 +11,6 @@ echo "repo init succses...."
 echo "sync succsessfull...."
 
 # cloning trees bg
-rm -rf device/xiaomi/earth
 
 git clone https://github.com/AbuRider/android_device_xiaomi_earth.git -b scandium device/xiaomi/earth
 
