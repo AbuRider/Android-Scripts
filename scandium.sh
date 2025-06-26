@@ -24,7 +24,7 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git
 
 # kalender kontol
 rm -rf packages/apps/Calendar
-git clone https://github.com/LineageOS/android_packages_apps_Etar.git -b lineage-21 packages/apps/Calendar
+git clone --depth=1 https://github.com/LineageOS/android_packages_apps_Etar.git -b lineage-21.0 packages/apps/Calendar
 
 # export
 export BUILD_USERNAME=rmdw
@@ -36,7 +36,5 @@ echo "export done...."
 
 # start build !
 . build/envsetup.sh
-lunch scandium_earth-ap2a-userdebug
-
-# start compile
-make bacon
+lunch scandium_earth-userdebug
+make bacon -j$(nproc --all)
