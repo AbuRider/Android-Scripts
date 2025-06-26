@@ -31,7 +31,7 @@ export BUILD_USERNAME=rmdw
 export BUILD_HOSTNAME=crave
 export TZ=Asia/Jakarta
 export ALLOW_MISSING_DEPENDENCIES=true
-export DISABLE_STUB_VALIDATION=true system-api-stubs-docs-non-updatable-update-current-api
+export DISABLE_STUB_VALIDATION=true 
 echo "export done...."
 
 # start build !
