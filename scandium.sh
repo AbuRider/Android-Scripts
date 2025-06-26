@@ -37,4 +37,5 @@ echo "export done...."
 # start build !
 . build/envsetup.sh
 lunch scandium_earth-userdebug
+make installclean
 make bacon -j$(nproc --all)
