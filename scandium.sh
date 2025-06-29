@@ -10,13 +10,17 @@ echo "sync succsessfull...."
 
 # cloning trees bg
 rm -rf device/xiaomi/earth
+rm -rf vendor/xiaomi/earth
+rm -rf kernel/xiaomi/earth
+rm -rf device/mediatek/sepolicy_vndr
+
 git clone https://github.com/AbuRider/android_device_xiaomi_earth.git -b scandium device/xiaomi/earth
 
 git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_earth.git -b lineage-21 vendor/xiaomi/earth
 
 git clone https://github.com/LineageOS/android_kernel_xiaomi_earth.git -b lineage-21 kernel/xiaomi/earth
 
-git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git -b lineage-21 device/mediatek/sepolicy_vndr
+git clone https://github.com/AbuRider/android_device_mediatek_sepolicy_vndr.git -b scandium device/mediatek/sepolicy_vndr
 
 /opt/crave/resync.sh
 
