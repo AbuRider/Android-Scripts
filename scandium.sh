@@ -23,6 +23,9 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git
 rm -rf packages/apps/Calendar
 git clone --depth=1 https://github.com/LineageOS/android_packages_apps_Etar.git -b lineage-21.0 packages/apps/Calendar
 
+# FM Radio
+git clone --depth=1 https://github.com/AbuRider/RevampedFMRadioMTK.git -b lineage-22.2 packages/apps/RevampedFMRadio
+
 # export
 export BUILD_USERNAME=rmdw
 export BUILD_HOSTNAME=crave
