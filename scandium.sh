@@ -21,9 +21,7 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git
 
 # fix emror
 rm -rf packages/apps/Calendar
-rm -rf packages/apps/Settings
 git clone --depth=1 https://github.com/LineageOS/android_packages_apps_Etar.git -b lineage-21.0 packages/apps/Calendar
-git clone --depth=1 https://github.com/AbuRider/packages_apps_Settings_Scandium.git -b 14 packages/apps/Settings
 
 # export
 export BUILD_USERNAME=rmdw
